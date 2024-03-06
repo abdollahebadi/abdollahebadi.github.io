@@ -6,3 +6,9 @@ body {
 h1 {
     color : blanchedalmond  ;
 }
+
+/*<================= Content related section ================>*/
+
+.content {
+   position: relative; 
+}

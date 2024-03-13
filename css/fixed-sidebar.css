@@ -1,0 +1,20 @@
+
+/*------------------------*\
+    In the name of Allah
+\*------------------------*/
+
+/**
+* This CSS file contains the styling for added for the fixed flaoting sidebar 
+* that isues in the website. The class of the sidebar is called 'fixed-sidebar'
+**/
+
+
+.fixed-sidebar {
+    position: fixed;
+    margin-top: var(--fixed_sidebar_vertical_start);
+    width : var(--fixed_sidebar_width) ;
+    height: var(--fixed_sidebar_height);
+    background-color: black;
+    border: 1px solid;
+    border-radius: 0 1em 1em 0;
+}

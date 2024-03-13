@@ -1,4 +1,50 @@
+/*------------------------*\
+    In the name of Allah
+\*------------------------*/
+
+
+/**
+* This stylesheet file contains common styles that are used throughout all the pages
+* of the website.
+*
+* Index
+*   - Body tag margin and padding
+*   - Styles related to the grid based layout of the pages
+
+**/
+
 body {
     margin : 0 ;
     padding : 0 ;
+}
+
+/*========== Styles related to the overall layout of the pages ==========*/
+
+.grid-container {
+    display : grid ;
+    width: 100vw ;
+    grid-template-rows: min-content auto min-content ;
+    z-index: -1;
+}
+
+.header {
+    position: sticky;
+    top:0;
+    width: 100vw;
+    background-color: white;
+}
+
+.content {
+    padding: 2em calc(var(--fixed_sidebar_width) * 1.5) 2em calc(var(--fixed_sidebar_width) * 1.5) ;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
 }

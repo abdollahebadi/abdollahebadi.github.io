@@ -1,14 +1,18 @@
 
-body {
-    background-color: aliceblue;
-}
+/*------------------------*\
+    In the name of Allah
+\*------------------------*/
 
-h1 {
-    color : blanchedalmond  ;
-}
+
+/**
+* This file contains styles specific to the index page (Home screen) of the website.
+* Within the head tags this stylesheet is linked last so that it could override any
+* global styles set by other stylesheets if needed.
+**/
+
 
 /*<================= Content related section ================>*/
 
-.content {
-   position: relative; 
+.grid-container {
+    height: 100vh;
 }

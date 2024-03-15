@@ -1,23 +1,31 @@
 /*------------------------*\
     In the name of Allah
 \*------------------------*/
-
 /**
 * This stylesheet file contains the variables used throughout the entire website
 * It should be placed at the first linked stylesheet in the head section so that
 * the variables here can be accessed correctly in other css files as well.
 *
 * Index
+    - color pallet for website
 *   - fixed sidebar related sizes
 **/
+/*------------------------*\
+\*------------------------*/
 
 :root {
-
+    /*
+    * Color Pallet used in website
+     */
+    --primary-color: #211951 ;
+    --secondary-color: #6E07F3 ;
+    --tertiary-color: #15F5BA ;
+    --quartenary-color: #F0F3FF ;
     /*
     * Fixed-sidebar sizes
     */
     --fixed_sidebar_width: 4em;
-    --fixed_sidebar_height: 20em ;
+    --fixed_sidebar_height: 17em ;
     --fixed_sidebar_half_height: calc(var(--fixed_sidebar_height) / 2) ;
     --fixed_sidebar_vertical_start: calc(50vh - var(--fixed_sidebar_half_height)) ;
 }

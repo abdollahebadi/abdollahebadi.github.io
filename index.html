@@ -5,47 +5,81 @@
 <head>
     <meta charset="UTF-8"/>
     <title>Abdollah Ebadi</title>
-    <link href="./css/variables.css" rel="stylesheet"/>
-    <link href="./css/universal.css" rel="stylesheet"/>
-    <link href="./css/fixed-sidebar.css" rel="stylesheet"/>
-    <link href="./css/header-style.css" rel="stylesheet"/>
-    <link href="./css/index-styles.css" rel="stylesheet"/>
-
+    <link href="css/global/variables.css" rel="stylesheet"/>
+    <link href="css/global/universal.css" rel="stylesheet"/>
+    <link href="css/elements/fixed-sidebar.css" rel="stylesheet"/>
+    <link href="css/layout/header-style.css" rel="stylesheet"/>
+    <link href="./css/elements/buttons.css" rel="stylesheet"/>
+    <link href="css/pages/index-styles.css" rel="stylesheet"/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 </head>
 <body>
 
-<div class="fixed-sidebar"></div>
+<div class="fixed-sidebar">
+    <span class="fixed-sidebar-items" >
+        <a href = "https://www.linkedin.com/in/abdollah-ebadi-910289bb/" target="_blank" >
+            <i class="fa-brands fa-linkedin fa-3x"></i>
+        </a>
+    </span>
+    <span class="fixed-sidebar-items">
+        <i class="fa-brands fa-github fa-3x"></i>
+    </span>
+    <span class="fixed-sidebar-items">
+       <i class="fa-brands fa-youtube fa-3x"></i>
+    </span>
+</div>
 <div class="grid-container">
     <div class="header">
         <div class="header-container">
             <div class="header-logo">
-                <img class="header-logo-img" src="./assets/face_placeholder.svg" alt="Abdollah Ebadi Personal Icon"/>
+                <img class="header-logo-img" src="./assets/abdollah_ebadi_logo_4.svg" alt="Abdollah Ebadi Personal Icon"/>
             </div>
             <div class="header-menu">
-                <a class="header-menu-items" href="./index.html">Home</a>
-                <a class="header-menu-items" href="./html/about_me.html">About</a>
-                <a class="header-menu-items" href="./html/projects.html">Projects</a>
-                <a class="header-menu-items" href="./html/contact.html">Contact</a>
+                <a class="header-menu-items anta-font-normal" href="./index.html">Home</a>
+                <a class="header-menu-items anta-font-normal" href="./html/about_me.html">About</a>
+                <a class="header-menu-items anta-font-normal" href="./html/projects.html">Projects</a>
+                <a class="header-menu-items anta-font-normal" href="./html/contact.html">Contact</a>
             </div>
         </div>
     </div>
 
     <div class="content">
-        <h1>1- Content- This is a test sentence to see what happens when the sentecnce gets too long and it needs to goto the next line...! </h1>
+        <div class = "hero" id = "hero-text-container" >
+
+            <h1 class = "exo-2-extra-bold name">Abdollah Ebadi</h1>
+
+            <h2 class = "exo-2-semi-bold title"> Learner, Engineer & Entrepreneur </h2>
+
+            <p class = "exo-2-medium description">Hey There, welcome to my website. I spend time and have fun by learning new stuff, and then I strive to practice what I have learned to help others,
+                like startups and businesses to solve a problem or two they might have. I also love bringing my own ideas in to life, so I have worked on some startup ideas of my own as well.</p>
+
+            <p class = "exo-2-medium description"> Spend some time and have a look around to get to know me better, and then we can chat. I promise coffee is on me :)!</p>
+
+            <a href = "./html/projects.html"><button class="custom-btn animate-btn"><span>Projects</span></button></a>
+
+        </div>
+
+        <div class = "hero" id = "hero-image-container">
+            <img id = "hero-image" src="assets/every_day_tools_2.svg" alt = "tools that I work with on a daily basis">
+        </div>
     </div>
 
     <div class="footer">
-        <h1> Footer </h1>
+        <div>
+            <h3 class = "footer-text anta-font-normal">Think, Plan & learn step by step.</h3>
+        </div>
+        <hr/>
+        <p class = "anta-font-normal">&#169. Copyright 2024 - Made by Abdollah Ebadi</p>
     </div>
 </div>
 
 
+<script src="https://kit.fontawesome.com/11b03e6dd7.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
-                         

@@ -1,0 +1,100 @@
+/*------------------------*\
+    In the name of Allah
+\*------------------------*/
+
+/*
+ * This stylesheet contains the CSS styling related to the various buttons used in
+ * this website.
+ */
+/*------------------------*\
+\*------------------------*/
+
+button {
+    margin: 20px;
+}
+
+.custom-btn {
+    width: 10em;
+    height: 3em;
+    color: #fff;
+    border-radius: 10px;
+    padding: 2em 2em;
+    font-family: "Anta", sans-serif;
+    font-weight: 500;
+    font-size: large;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0 rgba(255,255,255,.5),
+    7px 7px 20px 0 rgba(0,0,0,.1),
+    4px 4px 5px 0 rgba(0,0,0,.1);
+    outline: none;
+}
+
+.animate-btn {
+    background: linear-gradient(0deg, var(--secondary-color) 0%, var(--secondary-color) 100%);
+    line-height: 3em;
+    padding: 0;
+    border: none;
+}
+.animate-btn span {
+    position: relative;
+    display: block;
+}
+.animate-btn:before,
+.animate-btn:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: var(--tertiary-color);
+    transition: all 0.3s ease;
+}
+.animate-btn:before {
+    height: 0;
+    width: 2px;
+}
+.animate-btn:after {
+    width: 0;
+    height: 2px;
+}
+.animate-btn:hover{
+    background: transparent;
+    box-shadow: none;
+}
+.animate-btn:hover:before {
+    height: 100%;
+}
+.animate-btn:hover:after {
+    width: 100%;
+}
+.animate-btn span:hover{
+    color: var(--secondary-color);
+}
+.animate-btn span:before,
+.animate-btn span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: var(--tertiary-color);
+    transition: all 0.3s ease;
+}
+.animate-btn span:before {
+    width: 2px;
+    height: 0;
+}
+.animate-btn span:after {
+    width: 0;
+    height: 2px;
+}
+.animate-btn span:hover:before {
+    height: 100%;
+}
+.animate-btn span:hover:after {
+    width: 100%;
+}
+
+

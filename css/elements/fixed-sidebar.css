@@ -1,0 +1,34 @@
+
+/*------------------------*\
+    In the name of Allah
+\*------------------------*/
+/**
+* This CSS file contains the styling for added for
+* the fixed floating sidebar that is used in the website.
+* The class of the sidebar is called 'fixed-sidebar'.
+**/
+/*------------------------*\
+\*------------------------*/
+
+.fixed-sidebar {
+    box-shadow: 10px 10px 5px 0 rgba(211, 211, 211, 0.4);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: var(--fixed_sidebar_vertical_start);
+    width : var(--fixed_sidebar_width) ;
+    height: var(--fixed_sidebar_height);
+    background-color: white;
+    border: 2px solid var(--tertiary-color);
+    border-radius: 0 1em 1em 0;
+}
+
+.fixed-sidebar-items{
+    color : var(--primary-color) ;
+}
+
+.fixed-sidebar-items:hover {
+    opacity: 0.5;
+}

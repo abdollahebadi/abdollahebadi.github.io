@@ -1,0 +1,99 @@
+
+/*------------------------*\
+    In the name of Allah
+\*------------------------*/
+/**
+* This file contains styles specific to the index page (Home screen) of the website.
+* Within the head tags this stylesheet is linked last so that it could override any
+* global styles set by other stylesheets if needed.
+**/
+/*------------------------*\
+\*------------------------*/
+
+
+/*------------------------*\
+   override layout styles
+\*------------------------*/
+.grid-container {
+    height: 100vh;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--quartenary-color);
+}
+
+/*------------------------*\
+           Hero
+\*------------------------*/
+
+.hero {
+    display: flex;
+    flex-direction: column;
+}
+
+#hero-image-container {
+    justify-content: end;
+}
+
+#hero-text-container {
+    align-items: center;
+}
+
+#hero-image {
+    height: 500px;
+    aspect-ratio: auto;
+}
+
+/*------------------------*\
+         Hero Text
+\*------------------------*/
+.name {
+    font-size: xxx-large;
+    color: var(--primary-color);
+
+}
+
+.title {
+    font-size: xx-large;
+    color: var(--primary-color) ;
+}
+
+.description {
+    font-size: large;
+    color: var(--primary-color) ;
+    text-align: center;
+    line-height: 1.5;
+
+}
+
+/*------------------------*\
+           Footer
+\*------------------------*/
+
+.footer > div {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    justify-content: start;
+}
+
+.footer > div > h3 {
+    color: var(--quartenary-color);
+}
+
+.footer > p {
+    color: var(--quartenary-color)
+}
+
+.footer > hr {
+    background : var(--tertiary-color) ;
+    height :1px ;
+    width : 90vw ;
+}
+
+
+
+
+

@@ -1,0 +1,83 @@
+/*------------------------*\
+    In the name of Allah
+\*------------------------*/
+/**
+* This stylesheet file contains common styles that are used
+* throughout all the pages of the website.
+*
+* Index
+*   - Body tag margin and padding
+*   - Styles related to the grid based layout of the pages
+**/
+/*------------------------*\
+\*------------------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*------------------------*\
+           Fonts
+\*------------------------*/
+
+.anta-font-normal {
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.exo-2-extra-bold {
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+
+}
+
+.exo-2-semi-bold {
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.exo-2-medium {
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+/*------------------------*\
+   Styles related to the
+   overall layout of the
+   pages
+\*------------------------*/
+
+.grid-container {
+    display: grid;
+    width: 100vw;
+    grid-template-rows: min-content auto min-content;
+    z-index: -1;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    background-color: var(--secondary-color);
+}
+
+.content {
+    padding: 2em calc(var(--fixed_sidebar_width) * 1.5) 2em calc(var(--fixed_sidebar_width) * 1.5);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+}

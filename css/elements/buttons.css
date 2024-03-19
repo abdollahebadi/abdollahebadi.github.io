@@ -17,11 +17,13 @@ button {
     width: 10em;
     height: 3em;
     color: #fff;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 2em 2em;
     font-family: "Anta", sans-serif;
     font-weight: 500;
     font-size: large;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     background: transparent;
     cursor: pointer;
     transition: all 0.3s ease;

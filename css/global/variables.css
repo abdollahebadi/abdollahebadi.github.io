@@ -7,8 +7,9 @@
 * the variables here can be accessed correctly in other css files as well.
 *
 * Index
-    - color pallet for website
+*   - color pallet for website
 *   - fixed sidebar related sizes
+*   - breakpoints for media query
 **/
 /*------------------------*\
 \*------------------------*/
@@ -28,4 +29,9 @@
     --fixed_sidebar_height: 17em ;
     --fixed_sidebar_half_height: calc(var(--fixed_sidebar_height) / 2) ;
     --fixed_sidebar_vertical_start: calc(50vh - var(--fixed_sidebar_half_height)) ;
+    /*
+    * media query breakpoint values
+    */
+    --stage-one-breakpoint : 900px ;
+
 }

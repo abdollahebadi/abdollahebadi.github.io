@@ -29,9 +29,4 @@
     --fixed_sidebar_height: 17em ;
     --fixed_sidebar_half_height: calc(var(--fixed_sidebar_height) / 2) ;
     --fixed_sidebar_vertical_start: calc(50vh - var(--fixed_sidebar_half_height)) ;
-    /*
-    * media query breakpoint values
-    */
-    --stage-one-breakpoint : 900px ;
-
 }

@@ -9,7 +9,7 @@
 * Index
 *   - color pallet for website
 *   - fixed sidebar related sizes
-*   - breakpoints for media query
+*   - sizes related to menu items
 **/
 /*------------------------*\
 \*------------------------*/
@@ -29,4 +29,9 @@
     --fixed_sidebar_height: 17em ;
     --fixed_sidebar_half_height: calc(var(--fixed_sidebar_height) / 2) ;
     --fixed_sidebar_vertical_start: calc(50vh - var(--fixed_sidebar_half_height)) ;
+    /*
+    * Menu items related sizes
+     */
+    --menu-item-height : 30px ;
+    --menu-item-gap : 15px ;
 }

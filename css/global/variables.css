@@ -34,4 +34,11 @@
      */
     --menu-item-height : 30px ;
     --menu-item-gap : 15px ;
+    /*
+     * Expandable container variables (used in about me page)
+     */
+    --expandable-container-border-radius : 5px ;
+    --expandable-container-transition-time : 350ms ;
+
+
 }

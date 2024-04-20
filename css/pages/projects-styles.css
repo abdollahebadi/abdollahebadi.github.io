@@ -1,11 +1,98 @@
-body {
-  background-color: aliceblue;
+
+.grid-container {
+    height: 100vh;
 }
 
-h1 {
-    color :blue ;
+
+.content {
+    display : grid ;
+    grid-template-rows : min-content auto ;
 }
+
+
 
 .header-menu-items {
   text-decoration: none;
 }
+
+
+.tab-list {
+    display: flex;
+    gap:20px;
+    justify-content: space-around;
+}
+
+.tab {
+    display: grid ;
+    justify-items: center ;
+    text-align: center
+}
+
+.tab-indicator {
+    margin-top: 15px;
+    display: flex ;
+    height: 3px;
+    width: 100%;
+    background-color:var(--tertiary-color);
+    position: relative;
+    z-index: -1;
+}
+
+.tab-indicator::after {
+    content: "";
+    height: 100%;
+    scale: 1 1.5;
+    width: var(--width, 0) ;
+    background-color: #6E07F3;
+    position: absolute;
+    translate: var(--left , 0) ;
+    transition-property: translate ;
+    transition-duration: 0.4s ;
+    top: 0 ;
+    left : 0 ;
+    bottom: 0;
+}
+
+
+.tab-content {
+    display: none;
+}
+
+.show-tab {
+    display: block;
+}
+
+.tab-icon {
+    height : 50px ;
+    aspect-ratio: auto;
+}
+
+
+.tab-text {
+    margin-top : 15px ;
+    font-size: 1.5em ;
+    font-weight: bold
+}
+
+
+@media screen and (max-width : 500px) {
+    .content {
+        padding: 1em 1em;
+    }
+    .footer-upper {
+        text-align: center;
+    }
+
+    .tab-icon {
+        height: 50px;
+        width: auto;
+    }
+
+    .tab-text {
+        font-size: 1em ;
+    }
+
+}
+
+
+

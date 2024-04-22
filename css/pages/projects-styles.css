@@ -3,29 +3,12 @@
     height: 100vh;
 }
 
-
-.content {
-    display : grid ;
-    grid-template-rows : min-content auto ;
-}
-
-
-
 .header-menu-items {
   text-decoration: none;
 }
 
-
-.tab-list {
-    display: flex;
-    gap:20px;
-    justify-content: space-around;
-}
-
-.tab {
-    display: grid ;
-    justify-items: center ;
-    text-align: center
+.content {
+    padding: 1em 1em;
 }
 
 .tab-indicator {
@@ -56,42 +39,65 @@
 
 .tab-content {
     display: none;
+    margin: 20px 0 ;
 }
 
 .show-tab {
     display: block;
 }
 
-.tab-icon {
-    height : 50px ;
+.tab-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tab-text {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.tab-img {
+    width : 50px ;
     aspect-ratio: auto;
 }
 
+.tab-list {
+    display: flex ;
+    justify-content: space-around;
+    gap : 10px
+}
 
-.tab-text {
-    margin-top : 15px ;
-    font-size: 1.5em ;
-    font-weight: bold
+@media screen and (max-width: 650px) {
+    .tab-text {
+        font-size: 1.25em;
+    }
 }
 
 
 @media screen and (max-width : 500px) {
-    .content {
-        padding: 1em 1em;
-    }
     .footer-upper {
         text-align: center;
     }
-
-    .tab-icon {
-        height: 50px;
-        width: auto;
+    .footer-lower {
+        text-align: center;
     }
-
     .tab-text {
-        font-size: 1em ;
+        font-size: 1em;
     }
+}
 
+@media screen and (max-width: 380px) {
+    .content {
+        padding: 1em 0.5em;
+    }
+    .tab-list {
+        gap: 5px;
+    }
+    .tab-text {
+        font-size: 0.9em;
+        font-weight: bold;
+    }
 }
 
 

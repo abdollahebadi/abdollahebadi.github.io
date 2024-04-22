@@ -1,6 +1,6 @@
 //In the name of Allah
 
-let tabs = document.querySelectorAll(".tab")
+let tabs = document.querySelectorAll(".tab-item")
 
 let tabIndicator = document.querySelector(".tab-indicator")
 

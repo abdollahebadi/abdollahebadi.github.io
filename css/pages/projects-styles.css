@@ -68,12 +68,89 @@
     gap : 10px
 }
 
+.content-item {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr ;
+
+}
+
+
+.content-item-mobile-img {
+    justify-self: end;
+    margin-right: 5em;
+    height : 25em;
+    width: auto ;
+}
+
+.content-item-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap : 15px ;
+   padding: 2em 0 ;
+}
+
+.content-item-text > h2 {
+    text-align: center;
+}
+
+.content-item-text > p {
+    text-align: justify;
+}
+
+.custom-btn {
+    font-size: small;
+    z-index: -10;
+}
+
+.tab-content > hr {
+    width : 70vw ;
+}
+
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+    .content-item {
+        align-items: center;
+        grid-template-columns: 0.5fr 2fr 2fr 1fr;
+        justify-content: center;
+    }
+
+    .content-item-mobile-img {
+        grid-column: 2;
+        justify-self: center;
+        margin-right: 0;
+        height : 25em;
+        width: auto ;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .content-item {
+        margin-bottom: 0;
+        grid-template-columns: 100%;
+        grid-template-rows: auto 1fr ;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .content-item-mobile-img {
+        justify-self: center;
+        margin-right: 0;
+        height : 25em;
+        width: auto ;
+    }
+
+    .content-item-text {
+        margin : 0 2em ;
+    }
+}
+
+
 @media screen and (max-width: 650px) {
     .tab-text {
         font-size: 1.25em;
     }
 }
-
 
 @media screen and (max-width : 500px) {
     .footer-upper {

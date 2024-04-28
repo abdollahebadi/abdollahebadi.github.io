@@ -9,6 +9,73 @@
     line-height: 2em;
 }
 
+.client-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    justify-items: center;
+    align-items: center;
+}
+
+
+
+.logos {
+    width: 150px;
+    aspect-ratio: auto;
+}
+
+#clients-title {
+    grid-column: 2 / 4;
+    text-align: center;
+    margin : 15px ;
+}
+
+#ampol-logo {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+#anz-logo {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+#uts-logo {
+    grid-row: 2;
+    grid-column: 3;
+}
+
+#bradford-logo {
+    grid-row: 2;
+    grid-column: 4;
+}
+
+#ci-and-t-logo {
+    grid-row: 3;
+    grid-column: 1;
+}
+
+#iag-logo {
+    grid-row: 3;
+    grid-column: 2;
+}
+
+#hsbc-logo {
+    grid-row: 3 ;
+    grid-column: 3;
+}
+
+#levo-logo {
+    grid-row: 3;
+    grid-column: 4;
+}
+
+#nswt-logo {
+    grid-row: 4;
+    grid-column: 2 / 4;
+}
+
+
 .skills-container {
     display: grid;
     grid-template-columns: 0.5fr 3fr 0.5fr;
@@ -16,13 +83,30 @@
     grid-row-gap: 40px;
 }
 
-#skill-1 {
+#skills-title {
     grid-row: 1;
+    grid-column: 2;
+    text-align: center;
+    margin : 15px 5em ;
+}
+
+#skill-1 {
+    grid-row: 2;
     grid-column: 2;
 }
 
 #skill-2 {
-    grid-row: 2;
+    grid-row: 3;
+    grid-column: 2;
+}
+
+#skill-3 {
+    grid-row: 4;
+    grid-column: 2;
+}
+
+#skill-4 {
+    grid-row : 5 ;
     grid-column: 2;
 }
 
@@ -50,6 +134,7 @@
     display: grid;
     grid-template-rows: 0fr;
     padding : 1em ;
+    text-align: justify;
 
     transition-property: grid-template-rows ;
     transition-duration: 500ms;
@@ -76,22 +161,108 @@
     transform : rotate(-180deg);
 }
 
+@media screen and (max-width: 1100px) {
 
-@media screen and (max-width : 500px) {
+    #clients-title {
+        grid-column: 1 / 5;
+    }
+
+    #skills-title {
+        margin : 1px 0 ;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .logos {
+        width: 100px;
+        aspect-ratio: auto;
+    }
+
+}
+
+
+@media screen and (max-width: 800px) {
+    .skills-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-row-gap: 40px;
+    }
+}
+
+
+@media screen and (max-width : 600px) {
     .content {
-        padding: 2em 1em;
+        padding: 2em 1.5em;
     }
     .skills-container {
         grid-template-columns: 1fr;
     }
 
-    /*#skill-1 {*/
-    /*    grid-row: 1;*/
-    /*    grid-column: 1;*/
-    /*}*/
-
-
     .footer-upper {
         text-align: center;
     }
+}
+
+@media screen and (max-width: 500px) {
+    .client-grid {
+        display: grid;
+        grid-template-columns:  1fr 1fr ;
+        gap: 15px;
+        justify-items: center;
+        align-items: center;
+    }
+
+    #clients-title {
+        grid-column: 1 / 3;
+        text-align: center;
+        margin : 15px ;
+    }
+
+    #ampol-logo {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    #anz-logo {
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    #uts-logo {
+        grid-row: 3;
+        grid-column: 1;
+    }
+
+    #bradford-logo {
+        grid-row: 3;
+        grid-column: 2;
+    }
+
+    #ci-and-t-logo {
+        grid-row: 4;
+        grid-column: 1;
+    }
+
+    #iag-logo {
+        grid-row: 4;
+        grid-column: 2;
+    }
+
+    #hsbc-logo {
+        grid-row: 5 ;
+        grid-column: 1;
+    }
+
+    #levo-logo {
+        grid-row: 5;
+        grid-column: 2;
+    }
+
+    #nswt-logo {
+        grid-row: 6;
+        grid-column: 1 / 3;
+    }
+
+
 }

@@ -72,7 +72,12 @@
 
 #nswt-logo {
     grid-row: 4;
-    grid-column: 2 / 4;
+    grid-column: 1 / 3;
+}
+
+#veunex-logo {
+    grid-row: 4;
+    grid-column: 3 / 4;
 }
 
 
